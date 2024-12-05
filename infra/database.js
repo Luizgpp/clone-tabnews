@@ -37,5 +37,5 @@ function getSSLValues() {
     return { ca: process.env.POSTGRESS_CA };
   }
 
-  return process.env.NODE_ENV === "development" || "test" ? false : true;
+  return process.env.NODE_ENV === "production" ? true : false;
 }
